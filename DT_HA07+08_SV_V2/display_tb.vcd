@@ -1,0 +1,87 @@
+$date
+	Sat Dec 16 18:52:16 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module display_tb $end
+$var wire 16 ! SEGMENT [15:0] $end
+$var parameter 32 " CLK_PERIOD $end
+$var reg 1 # CLK $end
+$var reg 4 $ DIGIT [3:0] $end
+$var reg 1 % ERROR $end
+$scope module uut $end
+$var wire 4 & DIGIT [3:0] $end
+$var reg 16 ' SEGMENT [15:0] $end
+$upscope $end
+$scope task check $end
+$var reg 4 ( digit [3:0] $end
+$var reg 16 ) expected_segment [15:0] $end
+$upscope $end
+$scope task check_invalid $end
+$var reg 4 * val [3:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b110010 "
+$end
+#0
+$dumpvars
+bx *
+bx )
+bx (
+b1111110000110000 '
+b0 &
+0%
+b0 $
+0#
+b1111110000110000 !
+$end
+#25
+1#
+#50
+0#
+b1111110000110000 )
+b0 (
+#75
+1#
+#100
+b110000000100000 !
+b110000000100000 '
+0#
+b1 $
+b1 &
+b110000000100000 )
+b1 (
+#125
+1#
+#150
+b1111111100000000 !
+b1111111100000000 '
+0#
+b1000 $
+b1000 &
+b1111111100000000 )
+b1000 (
+#175
+1#
+#200
+b10110100 !
+b10110100 '
+0#
+b1010 $
+b1010 &
+b1010 *
+#225
+1#
+#250
+0#
+#275
+1#
+#300
+0#
